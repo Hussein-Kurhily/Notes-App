@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Widgets/custom_icon_search.dart';
-import 'Widgets/custom_note_item.dart';
+import 'Widgets/notes_list_view.dart';
 
 class NotesView extends StatelessWidget {
   const NotesView({Key? key}) : super(key: key);
@@ -25,7 +25,7 @@ class NotesView extends StatelessWidget {
                 CustomSearchIcon(),
               ],
             ),
-            NoteItem(),
+            const Expanded(child: NoteListView()),
 
           ],
         ),
@@ -33,5 +33,7 @@ class NotesView extends StatelessWidget {
     );
   }
 }
+
+
 
 
