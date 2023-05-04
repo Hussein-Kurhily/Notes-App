@@ -25,9 +25,9 @@ class NoteItem extends StatelessWidget {
                   'Flutter Tips',
                   style: TextStyle(color: Colors.black,fontSize: 24,fontWeight: FontWeight.w500),
                 ),
-                subtitle: Padding(
-                  padding: const EdgeInsets.only(top: 14),
-                  child: const Text(
+                subtitle:const Padding(
+                  padding:  EdgeInsets.only(top: 14),
+                  child:  Text(
                     'Start your journy whit Hussein Kurhily',
                     style: TextStyle(color: Colors.black54, fontSize: 16),
                   ),
@@ -42,8 +42,8 @@ class NoteItem extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 24,bottom: 16),
+         const Padding(
+            padding:EdgeInsets.only(right: 24,bottom: 16),
             child: Text('May 16,2002',
               style: TextStyle(
                 fontSize: 12,
