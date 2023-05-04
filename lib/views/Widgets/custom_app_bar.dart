@@ -9,27 +9,24 @@ class CustomAppBar extends StatelessWidget {
   final IconData iconData;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: Column(
-        children: [
-          const SizedBox(
-            height: 28,
-          ),
-          Row(
-            children:  [
-              Text(
-                title,
-                style: const TextStyle(fontSize: 28),
-              ),
-              const Spacer(),
-              CustomSearchIcon(
-                appBarIcon: iconData,
-              ),
-            ],
-          ),
-        ],
-      ),
+    return Column(
+      children: [
+        const SizedBox(
+          height: 28,
+        ),
+        Row(
+          children:  [
+            Text(
+              title,
+              style: const TextStyle(fontSize: 28),
+            ),
+            const Spacer(),
+            CustomSearchIcon(
+              appBarIcon: iconData,
+            ),
+          ],
+        ),
+      ],
     );
   }
 }
