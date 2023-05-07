@@ -1,19 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:notes/constant/colors.dart';
+import 'package:notes/constant/constans.dart';
 import 'package:notes/views/Widgets/edit_note_view.dart';
 
 class SaveNoteBottom extends StatelessWidget {
-  const SaveNoteBottom({Key? key}) : super(key: key);
-
+  const SaveNoteBottom({Key? key, this.onTap}) : super(key: key);
+  final void Function()? onTap ;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return const EditNoteView() ;
-        } ));
-      } ,
+      onTap:  onTap,
       child: Container(
         width: MediaQuery.of(context).size.width,
         height: 55,

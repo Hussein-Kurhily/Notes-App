@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:notes/views/notes_view.dart';
-import 'constant/colors.dart';
+import 'constant/constans.dart';
 
 void main() async {
   await Hive.initFlutter() ;
