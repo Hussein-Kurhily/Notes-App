@@ -1,6 +1,8 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hive_flutter/adapters.dart';
+import 'package:notes/constant/constans.dart';
 
 import '../models/note_model.dart';
 
@@ -10,7 +12,14 @@ class AddNoteCubit extends Cubit<AddNoteState> {
   AddNoteCubit() : super(AddNoteInitial());
 
 
-  addNote(NoteModel note) {
-
+  addNote(NoteModel note) async {
+    emit(AddNoteLoading());
+    try{
+    var notesBox = Hive.box<NoteModel>(kNoteBox) ;
+     await notesBox.add(note) ;
+     emit(AddNoteSuccess());
+    } catch (e) {
+      AddNoteFailure(e.toString()) ;
+    }
   }
 }
