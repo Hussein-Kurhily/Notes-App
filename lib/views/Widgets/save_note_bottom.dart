@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:notes/constant/constans.dart';
-import 'package:notes/views/Widgets/edit_note_view.dart';
+
 
 class SaveNoteBottom extends StatelessWidget {
   const SaveNoteBottom({Key? key, this.onTap}) : super(key: key);

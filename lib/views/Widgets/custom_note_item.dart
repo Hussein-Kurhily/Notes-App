@@ -8,7 +8,7 @@ class NoteItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16), color: Color(0xffFFCC80)),
+          borderRadius: BorderRadius.circular(16), color: const Color(0xffFFCC80)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
@@ -19,26 +19,24 @@ class NoteItem extends StatelessWidget {
               left: 16,
 
             ),
-            child: Container(
-              child: ListTile(
-                title: const Text(
-                  'Flutter Tips',
-                  style: TextStyle(color: Colors.black,fontSize: 24,fontWeight: FontWeight.w500),
+            child: ListTile(
+              title: const Text(
+                'Flutter Tips',
+                style: TextStyle(color: Colors.black,fontSize: 24,fontWeight: FontWeight.w500),
+              ),
+              subtitle:const Padding(
+                padding:  EdgeInsets.only(top: 14),
+                child:  Text(
+                  'Start your journy whit Hussein Kurhily',
+                  style: TextStyle(color: Colors.black54, fontSize: 16),
                 ),
-                subtitle:const Padding(
-                  padding:  EdgeInsets.only(top: 14),
-                  child:  Text(
-                    'Start your journy whit Hussein Kurhily',
-                    style: TextStyle(color: Colors.black54, fontSize: 16),
-                  ),
-                ),
-                trailing: IconButton(
-                  onPressed: () {},
-                  icon: const Icon(FontAwesomeIcons.trash),
-                  iconSize: 26,
-                  color: Colors.black,
+              ),
+              trailing: IconButton(
+                onPressed: () {},
+                icon: const Icon(FontAwesomeIcons.trash),
+                iconSize: 26,
+                color: Colors.black,
 
-                ),
               ),
             ),
           ),
