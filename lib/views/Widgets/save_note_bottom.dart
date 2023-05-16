@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:notes/constant/constans.dart';
+import 'package:notes/constant/constants.dart';
 
 
 class SaveNoteBottom extends StatelessWidget {

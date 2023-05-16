@@ -4,8 +4,8 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:notes/models/note_model.dart';
 import 'package:notes/simple_bloc_observer.dart';
 import 'package:notes/views/notes_view.dart';
-import 'constant/constans.dart';
-import 'cubits/add_note_cubit.dart';
+import 'constant/constants.dart';
+
 
 void main() async {
   //Hive
